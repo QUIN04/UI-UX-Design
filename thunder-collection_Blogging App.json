@@ -1,0 +1,268 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Blogging App",
+    "dateExported": "2024-03-11T09:24:18.183Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7b58f36c-9dd0-476f-87c4-c6848c7fe04d",
+            "name": "auth",
+            "containerId": "",
+            "created": "2024-03-01T18:13:19.740Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "9f070f83-33f9-43f4-bba0-a228532d1e4b",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-05T08:40:20.951Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "48315615-8745-44a4-bbec-2824888ac951",
+            "name": "post",
+            "containerId": "",
+            "created": "2024-03-05T18:05:29.131Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "comments",
+            "containerId": "",
+            "created": "2024-03-09T05:51:22.660Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0d431909-c3ea-46fb-b9a5-590e20e4a396",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "7b58f36c-9dd0-476f-87c4-c6848c7fe04d",
+            "name": "signup",
+            "url": "http://localhost:5000/api/user/signup",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-01T18:13:45.556Z",
+            "modified": "2024-03-05T10:32:01.499Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"CharlesTabot1\",\n  \"email\":\"charles1.tabot@home.com\",\n  \"password\":\"Hello#123\",\n  \"profilePicture\": \"https://yt3.ggpht.com/yti/ANjgQV9-6fuOGSPBD61fKCsisWJtFtaLjR9D26pekaShFw=s108-c-k-c0x00ffffff-no-rj\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a118e860-947d-4e42-a0cc-eec72e5b45bc",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "7b58f36c-9dd0-476f-87c4-c6848c7fe04d",
+            "name": "signin",
+            "url": "http://localhost:5000/api/user/signin",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T14:20:12.323Z",
+            "modified": "2024-03-05T17:34:08.371Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"charles.tabot@home.com\",\n  \"password\":\"Hello#123\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "13c80a63-7916-4d49-89ea-40b472622b7f",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "9f070f83-33f9-43f4-bba0-a228532d1e4b",
+            "name": "update user",
+            "url": "http://localhost:5000/api/user/update/65e758aa68d1f62ceb53ce90",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-05T08:40:28.562Z",
+            "modified": "2024-03-05T17:46:36.900Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"profilePicture\": \"https://media.licdn.com/dms/image/D5635AQHR11wuHnXZLA/profile-framedphoto-shrink_100_100/0/1705042760479?e=1710234000&v=beta&t=8weiTis2Xm6Vu90SlrlBEO61PlOi-2B-iGL6TCV8pV4\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "2a34c553-d78d-46a4-a129-1a1cce05a8e5",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "9f070f83-33f9-43f4-bba0-a228532d1e4b",
+            "name": "delete user",
+            "url": "http://localhost:5000/api/user/delete/65e478098d71a4c3efb9a672",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-05T10:24:59.787Z",
+            "modified": "2024-03-05T15:56:35.030Z",
+            "headers": [],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "dd650231-ee7d-4030-afd1-b1bf2e5cb2e2",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "7b58f36c-9dd0-476f-87c4-c6848c7fe04d",
+            "name": "signout",
+            "url": "http://localhost:5000/api/user/signout",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-05T10:54:16.162Z",
+            "modified": "2024-03-05T10:54:42.329Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "02fec486-0788-4447-8067-cda3b6e16399",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "48315615-8745-44a4-bbec-2824888ac951",
+            "name": "create post",
+            "url": "http://localhost:5000/api/post/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-05T18:05:47.116Z",
+            "modified": "2024-03-05T18:08:33.944Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"I am here with you\",\n  \"content\":\"You are not alone i am her wit u though you are far away i am here to stay\",\n  \"image\": \"https://media.licdn.com/dms/image/D5635AQHR11wuHnXZLA/profile-framedphoto-shrink_100_100/0/1705042760479?e=1710234000&v=beta&t=8weiTis2Xm6Vu90SlrlBEO61PlOi-2B-iGL6TCV8pV4\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a9969e6-fafa-4c7d-b42c-85453dfba9e8",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "48315615-8745-44a4-bbec-2824888ac951",
+            "name": "get posts",
+            "url": "http://localhost:5001/api/post/getposts",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-06T12:59:09.165Z",
+            "modified": "2024-03-09T05:51:08.398Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d3bac5c0-74aa-42a4-8071-1f23e62d0a3e",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "48315615-8745-44a4-bbec-2824888ac951",
+            "name": "delete post",
+            "url": "http://localhost:5000/api/post/deletepost/65e89de123b038806b98023b/65e758aa68d1f62ceb53ce90",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-07T19:36:42.071Z",
+            "modified": "2024-03-07T19:47:10.060Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a3a648e6-4fe7-4179-b71f-3bba9d6d05a0",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "48315615-8745-44a4-bbec-2824888ac951",
+            "name": "update post",
+            "url": "http://localhost:5000/api/post/updatepost/65eae677b4c33996eb2f513b/65e758aa68d1f62ceb53ce90",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-08T10:29:29.735Z",
+            "modified": "2024-03-08T10:33:07.884Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"image\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUPEhIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGA8PFSsfHh0rMDcrLSsuLi0rKysrLSsvKzAtNzctLS0wLi0vNy8tMisrLzcrLisrNy8rLS0vLS03K//AABEIAKIBNwMBEQACEQEDEQH/xAAbAAEBAQEBAQEBAAAAAAAAAAAAAQIDBQQGB//EADcQAAICAQEFBQYFAwUBAAAAAAABAhEDIQQSMUFRBWFxgZEGEyKhscFSctHh8CMyQhYzktLxFf/EABoBAQACAwEAAAAAAAAAAAAAAAABAgMFBgT/xAA3EQEAAQMCAggFAgMJAAAAAAAAAQIDEQQxBSESQVFhcYGR0RMiobHBMuEV8PEGFCMkM1JTstL/2gAMAwEAAhEDEQA/AP42BQAAAAAWAAAAAEAqAAAAAAAAoEAAGBAKAAAAABMDSANgZoDSQEigN5GuQGZO9fL0AgFYHNMDSAAAAEAgFsC2BGwJYCwLYFAAAAEYBMC2AsCNgSwKmBUAAAAIBANIDVgHIAnzAspfr/PUDDYGq4ICMDo1wfAD5wKgKAAAQAAAAQABQAFAAUCMCAAAEAAAAFQFAAAAEAqYEYFQFsCXp4AVIDqna779P5qBzgta7wOuR18NeAHz0AAoACoCNAZsCoAwAABQAAgKAAtAZYEAoEAoCgFAAKAAqAjQGbAqAALA1GFgSS6AahHiBrE6T/nQBj4rxXyA01vS+XoBxAAAAACsDNAAFgAKAAAAAACoDLAUAsAAAoAAAAAAKwM0AAAAOuBAYk9QO+GGjfcBnDBvTgBnGnx6AfTskKd9/wBv3A+ICoCMABQAEAMDNAUCgQCgUCAAKAAIDDQHs4tgxz2dTS3cluMabfvGnw3W+nNcK6ENxRpLV3RxcpjFzOI3+aY7vbbfZe0ewZY478XvJL4lzXVrqiU6vg9yzR07c9KI37Y94eMGmUCoAwIBQAEAtAbjFcX+oGoxvVLTq+AGscVz07+K/YDWbZXdpaPoBrIt2l6eIEi09PH6cfqBjHHXz+oH14vhpLz68APMAAAKAAIABGBAAFAAAAFAAd9j2OeWW7CN9XwS72yJnD0afS3dRV0bVOftHi9zD7MafHk16RX3f6EdJvLfAIx/iXPSPf2dv9NYvx5PWP8A1GWb+A2P99X09nz5/Zj8GTykvuv0JYLvAf8Ajuese3s9HsfZZQjU4pSilFNO048bXS23YbHh+nrtUYuU4mOUdmN+XjO/9HoBsX4ntfZljzTitFaaXRNXX1JcPxCxFnUV0U7bx5viDxAACgGAQAABZJ0gO2eelLgtEByhPkwPp2bPuvdfB/IDW38mgOGOWgG8S1S7/mB92GHxJpVoB5FAQABQAEAWBQAABQABQEA1jg5NRim2+CStvwQWooqrqimmMzPVD1tj9ns038S93Hm3TflFfeik3IbXT8F1NyfnjoR37+Ue79VseyRxQUIKkvVvm2+bMXSy6vT6a3p7cW7cco+vfLq0TEsyNFolCUWiUIWQgH5Laf6+10tY7yXduw/ufyZLkL2NXxDFPOMxHlG/5ce2Ozvczpf2S1i/qn3oMHEdFOlu4j9M7e3k88PAAUABAFgaQHXJHSwMb1oCJUBJMDc53GgM2BvGwPYwzqS05fVAeEBQIBQJQAAAAAEAAAUCAe77JZcccklJpSkkoX4veSfV6GG9nHJveA3LVF6qK5xVMR0fzH2frqMES69Gi2UMtE5VSi0ShlotlDM3WtN+HEtEq1TiMvJ2/LtGS8eLG4J6Oc2k67km68SzUaq5rL0Tbs25pid6pmI9N/Xfwdeyeyo4Vd703xl0XRdxLNoOHUaWM5zVO8/iP55una2ye9xSjzWsfzL9eHmGTX6b+8WKqOvePGPfZ+JJcOAUCUAoAAA1GdAae6+4COHRoDAFAgHXGwPt978IHmgAKBGAAAAAAABAAFAIDSdO1o1qn3oJiZicx1P1nZ3tFF428tb0U26/yS3UtH/k23p3HmqtTE8nW6PjVNVqZv8A6qYnbrxjHnMzt3dThL2rXLC6750/Si0We9gn+0UZ5WeXj+z6dm9pcMtJKUO96r1X6ETbqh6bPHdPXOK4mnx5x9PZ68JKSUk009U07T8yrcU1U1RFVM5iVaJiUstFolCNFolCUWiUIWQ/Edr4dzNOPLeteEtfuS4biFr4Wprpjtz683yB40AAAFAKAAAIAsCgEB0ggOm/QHzgEBQACgABsDLAICgADAAUAAoAAA+/sjtWWCXNwb+KP3j0f1KVUdJsOH8Qr0lfbRO8fmO/7v3GOaklKLtNJp9U+B53c01U10xVTOYnYaJylGi0ShGi0SqzRaJQ/I+0y/rv8sfuXhx/Go/zU+Efl5RLUgCgACwI2ASAoACMABUBpMCtAcwAFAAAIBaAzQFoCALAoACgEAA6bPglklHHHVydL9yJnEZlks2qr1ym3RvL1O1uwvcY1keS3aVbtW3017jHRd6U4w2uv4RGksxcm5mc4xj7c3j7l8F3eb4IytPETO0P2fs3HJCDw5YuLg7jf4ZXwa0eqfqeW5MTOYdpwem9btTYvUzE07eE/vl6fvVvOHNRUvJtpfRlerLZ/Eia5t9cRn1z7NNE5WRotEoZLRKH4jtzNvZ5tcE93/iqfzszU7OG4nd+Jqq5jq5enL7vhJeAAARAWgNQxgblEDk1QEbAAKA1GLYG/cyAjg139wHMAAAIABbAWBKAoEYBoAAAAAAH2dkbQseaGSXBPXuTTi35XZWuM0zD2aC9TZ1NFyraJ5+fJ+37Q2KGeG5LhxTXFPk16njpqmmcw7fV6S3qrfQr23iY6u98vZ3YePEtfjampptVqk1HTut+bLVXJqeXScJs6enE/NOc5ntjMR6Znz5vv2naI44uc3SXP7LqykRMziHvvXqLNE3Lk4iHkez2WWWWbaJaKTjGK6KKenzXzMtzFMRS1HCbleorvamraqYiO6I/r6vaaMcS3aUWiUPAzdrqMtokne4scILrL47+d+hminlDn7nEot3NRVE/p6MU98/N+c+UPyjZmcpvuALAAUDaA6wvyA62gOeSHRAfPJdUBNAO+zRV0BcmPdknybA6SzKpK9eXoB92w7IlG2tWB4gEoCgAAAAAAAAABAGAQCgAFX8/85hMTicvf2P2ncIqMsUWlotx7mn5aa+hgqs52lv9Px+q3TFFdqJiOzl9OcO2X2s/Bi85S+yX3Iix2yzXP7Rcvktes/t+XlPJn2vIot38oQXV9PqZMU24aua9VxK7FMzn/rT3/wA85fr+zFihFYMclLcWta6vi5NcG3eh5qszPSl12jixaojT2qonoxzxz9e+ex07Q22GGDyTfgucn0RFNM1TiGTVaq3prc3Lk+8z2Q8vbe03hwKUv97Lckvw732iqXijLTT0quW0NXqddVptLFVf+pc5xHZn/wAxiO+X5Cz0uPZoCgAAFQG4sDtFgbSf81A2ogc8uDowOaw93gB3wYUta18eAHTKrTToD48ONb3gB62DLLThXoB4IFAAAAABYAAwAACAUAAAAAI2BQPv2Ds6eRW5e7x85zdR8k/7mUqriO+Xv0uiuXozVV0KOuZ5R5dv273t/wD2Nn2aHusC3314JvrKXPy+Rh+HVXOam7/iWk0Vr4WmjpT9M9sz1+XhyeDn7QlkyLJl+OuEeEe5V0vj1M8UREYhobutrvXou3vmx1dXh4dvXLhte0SySc5u5P8AlJckTEREYhgvX7l6ublyczLiSxKAAAALYFQHSMgO0ZgdV1sDaXUDTwpgYlFrggOcoyej/YCw2dgfXs+GXADwrA0gAAABAIBbAtgSwIAsC2BQAAABGAQAC2BlsAATA0gAAAAAqA3EDogNIDrGTA7rIB2g7A37sDrDGB3WgH5ECoCgAAACAAAEAAUABQAAAwIAAAQAAAAVAUAAAAaigNqQGoyA6RA6wA3q2B9WNAdUwO0WBtAfk6AAUABUBGgMgVAGAAAKAAEBQAFoDLAgFAgFAUAoABQAFQEAWBqwNpgdIMDsmB0xcQPpjLmBcMtAO0ZAdVID8uAAAAAFYGQACwAFAAAAAABUBGBKAWAsABQAAAAAAVgZAoGogd4MDpFgbgwOu8BuLA6RmB0WQD8+BUBGAAoACAGBmgKBQIBQKBAKAAAEBhoCoABQAFQEYACgAAADUQOkQNuQG4MDpFgdIsDaYGrA8UCsCAUAwEQAEYEAICgAKgIBQAEYGgIBAIBQAAAAAoBgIAGAAoHRAWfADrADpElLZCG0BZAf/9k=\",\n  \"title\":\"Lets learn Nest.js\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "70c778d4-b0fd-43b4-bb1e-96867cda4576",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "create comment",
+            "url": "http://localhost:5001/api/comment/create",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-09T05:51:31.720Z",
+            "modified": "2024-03-09T05:59:59.595Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\":\"I will never forget you!\",\n  \"userId\":\"65e758aa68d1f62ceb53ce90\",\n  \"postId\":\"65eae677b4c33996eb2f513b\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f338c5fc-cdd9-480d-ae5c-ed750926d65f",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "get comment",
+            "url": "http://localhost:5001/api/comment/getcomments/65eae677b4c33996eb2f513b",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-09T12:47:05.938Z",
+            "modified": "2024-03-09T12:47:48.295Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ddb0f8a-5655-4991-bc0c-3f183802824b",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "add likes",
+            "url": "http://localhost:5001/api/comment/like/65ec5431e0b5586da884df06",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-09T15:18:35.559Z",
+            "modified": "2024-03-09T15:24:03.774Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8b6ef1d9-9535-4cc2-91c8-5e89195c28f0",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "delete comment",
+            "url": "http://localhost:5001/api/comment/delete/65ec5431e0b5586da884df06",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-09T16:49:39.493Z",
+            "modified": "2024-03-09T16:50:14.373Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2d3b7434-47e1-4717-a821-22560ac6a7b9",
+            "colId": "5b71dc6c-a305-4fbd-989f-328c0c729b62",
+            "containerId": "fa16a6c3-eaa5-4eb3-b092-548387e6f0db",
+            "name": "get all comments",
+            "url": "http://localhost:5001/api/comment/getcomments",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-10T00:23:45.281Z",
+            "modified": "2024-03-10T00:24:06.392Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
